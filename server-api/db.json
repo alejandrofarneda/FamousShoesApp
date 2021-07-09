@@ -1,0 +1,24 @@
+{
+  "clients": [
+    {
+      "id": "cac8c53e-338f-472b-9b30-7d893dc228a9",
+      "email": "thedude@gmail.com",
+      "name": "El Duderino"
+    },
+    {
+      "id": "5b78014b-0010-4c16-a1fe-040980154456",
+      "email": "accompanied@gmail.com",
+      "name": "Han Solo"
+    },
+    {
+      "id": "252a0d76-e3e3-4840-a152-a75b20298901",
+      "email": "juno@gmail.com",
+      "name": "Juno MacGuff"
+    },
+    {
+      "name": "Jules Winnfield",
+      "email": "julesw@gmail.com",
+      "id": "41c3d9b9-2990-4fb3-9584-f784bb693554"
+    }
+  ]
+}

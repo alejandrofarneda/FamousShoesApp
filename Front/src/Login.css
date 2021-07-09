@@ -1,0 +1,50 @@
+.modal-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-fg {
+    background-color: lightgray;
+    border-radius: 4px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.4);
+    color: black;
+    padding: 5rem;
+    text-align: center;
+}
+
+.login h1 {
+    align-self: center;
+    margin-top: 0;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.login-form input {
+    width: 20rem;
+    height: 1.6rem;
+    font-size: 1rem;
+}
+.login-form .button-login {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: 550;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    background-color: #282c34;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    cursor: 'pointer';
+}

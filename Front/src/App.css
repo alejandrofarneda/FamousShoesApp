@@ -1,0 +1,78 @@
+.App {
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: grid;
+    grid-template-areas:
+        'navbar navbar'
+        'aside home';
+    grid-template-columns: 10rem auto;
+    grid-template-rows: 5rem auto;
+}
+
+.App a {
+    color: #ffffff;
+    text-decoration: none;
+}
+main {
+    grid-area: home;
+    padding: 5rem;
+}
+
+.App .header {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 5rem;
+    align-items: center;
+    text-align: left;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(196, 162, 162);
+}
+
+.aside {
+    grid-area: aside;
+    background-color: rgb(48, 24, 24);
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 5rem;
+    padding-top: 10rem;
+    align-items: center;
+    border-right: 1px solid rgb(196, 162, 162);
+}
+.aside :nth-child(1) {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-weight: 600;
+}
+.aside :nth-child(1):hover {
+    color: black;
+}
+
+.aside :nth-child(2) {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-weight: 600;
+}
+.aside :nth-child(2):hover {
+    color: black;
+}
+.welcome {
+    font-size: 4rem;
+}
+.logo {
+    background-image: url('./store/famous.jpg');
+    background-size: 150%;
+    background-position: center;
+    width: 8rem;
+    height: 3rem;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 5px white);
+}
