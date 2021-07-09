@@ -4,7 +4,7 @@ Web-App con herramientas administrativas para el control de Clientes y Stock en 
 
 ✓ - CRUD
 
-✓ - Autennticación de Usuario
+✓ - Autenticación de Usuario
 
 ✓ - React => Redux / Hooks 
 
