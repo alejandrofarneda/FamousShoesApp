@@ -10,7 +10,7 @@ function Landing(props) {
                 alignContent: 'center',
             }}
         >
-            <h1>THE FAMOUSE SHOE</h1>
+            <h1>THE FAMOUS SHOE</h1>
             <h4>Control de Clientes y Stock</h4>
         </div>
     );
