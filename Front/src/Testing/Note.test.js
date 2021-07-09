@@ -27,7 +27,7 @@ test('clicking the button calls event handler once', () => {
         important: true,
     };
 
-    const mockHandler = jest.fn();
+    const mockHandler = jest.fn(); //Nuestro espía
 
     const component = render(
         <Note note={note} toggleImportance={mockHandler} />

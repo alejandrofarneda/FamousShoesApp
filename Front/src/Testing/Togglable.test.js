@@ -6,6 +6,7 @@ import Togglable from './Togglable';
 describe('<Toggable />', () => {
     const buttonLabel = 'show';
     let component;
+
     //Una manera de renderizar automáticamente el componente sin la necesidad de declararlo en cada test.
     beforeEach(() => {
         component = render(
