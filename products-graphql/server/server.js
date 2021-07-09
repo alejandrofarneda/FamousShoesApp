@@ -46,7 +46,7 @@ const resolvers = {
     Mutation: {
         createProduct: (parent, args, context, info) => {
             return products.push({
-                id: Date.now().toString(),
+                id: v4(),
                 name: args.name,
                 stock: true,
             });
