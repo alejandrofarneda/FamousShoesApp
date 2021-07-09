@@ -16,6 +16,6 @@ Web-App con herramientas administrativas para el control de Clientes y Stock en 
 
 
 
-A implementar:
+Extras:
 
-- Testing => Jest
+- Prueba con Testing => Jest
