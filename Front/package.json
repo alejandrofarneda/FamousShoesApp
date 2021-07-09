@@ -7,8 +7,6 @@
     "@apollo/react-hooks": "^4.0.0",
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "apollo-boost": "^0.4.9",
     "axios": "^0.21.1",
@@ -30,17 +28,10 @@
     "uuidv4": "^6.2.11",
     "web-vitals": "^1.1.2"
   },
-   "devDependencies": {
-    "@babel/preset-env": "^7.14.7",
-    "@babel/preset-react": "^7.14.5",
-    "babel-jest": "^27.0.6",
-    "jest": "^27.0.6",
-    "react-test-renderer": "^17.0.2"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test/jest",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -60,5 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0"
   }
 }
