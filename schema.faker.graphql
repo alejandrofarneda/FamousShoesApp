@@ -12,23 +12,39 @@
 # Developed with ❤️ by APIs.guru | https://github.com/APIs-guru/graphql-faker
 
 type Products {
-  id: ID
-  name: String @examples(values: ["T-shirt", "Pants", "Shoes"])
-  company: String @examples(values: ["Kiddily", "Knowza", "Crowdstage", "QuickSpace", "Seekingon" ])
-  price: Int @fake(type:money, options: {minMoney: 100, maxMoney: 200}) 
+    id: ID
+    name: String @examples(values: ["T-shirt", "Pants", "Shoes"])
+    company: String
+        @examples(
+            values: [
+                "Kiddily"
+                "Knowza"
+                "Crowdstage"
+                "QuickSpace"
+                "Seekingon"
+            ]
+        )
+    price: Int @fake(type: money, options: { minMoney: 100, maxMoney: 200 })
 }
 type Product {
-  id: ID
-  name: String @examples(values: ["T-shirt", "Pants", "Shoes"])
-  company: String @examples(values: ["Kiddily", "Knowza", "Crowdstage", "QuickSpace", "Seekingon" ])
-  price: Int @fake(type:money, options: {minMoney: 100, maxMoney: 200}) 
-  stock: Int @fake(type: number, options: {maxNumber: 20})
-	sizes: String @examples(values: ["S", "M", "L", "XXL"])  
+    id: ID
+    name: String @examples(values: ["T-shirt", "Pants", "Shoes"])
+    company: String
+        @examples(
+            values: [
+                "Kiddily"
+                "Knowza"
+                "Crowdstage"
+                "QuickSpace"
+                "Seekingon"
+            ]
+        )
+    price: Int @fake(type: money, options: { minMoney: 100, maxMoney: 200 })
+    stock: Int @fake(type: number, options: { maxNumber: 20 })
+    sizes: String @examples(values: ["S", "M", "L", "XXL"])
 }
-
 
 type Query {
-  products(id: ID): [Products]  
-  product(name: String): [Product]
+    products(id: ID): [Products]
+    product(name: String): [Product]
 }
-
