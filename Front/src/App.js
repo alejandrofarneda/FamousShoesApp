@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import Navbar from './Navbar';
 import Home from './Home';
 import Dashboard from './Dashboard';
-import ErrorMessage from './ErrorMessage';
 import { NavLink, Switch, Route } from 'react-router-dom';
 import PrivateRoute from './Helpers';
 import Landing from './Landing';
@@ -16,7 +15,6 @@ function App() {
             <Helmet>
                 <title>Administración</title>
             </Helmet>
-            <ErrorMessage />
             <Navbar />
             <PrivateRoute>
                 <div className="aside">

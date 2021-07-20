@@ -13,17 +13,6 @@ const userReducer = (state = defaultUserState, action) => {
     }
 };
 
-const errorReducer = (state = null, action) => {
-    switch (action.type) {
-        case 'NEW_ERROR':
-            return action.error;
-        case 'CLEAR_ERROR':
-            return null;
-        default:
-            return state;
-    }
-};
-
 const localStorageMiddleware = (store) => (next) => (action) => {
     let result = next(action);
     localStorage.setItem('session', JSON.stringify(store.getState()));
@@ -33,7 +22,6 @@ const localStorageMiddleware = (store) => (next) => (action) => {
 const store = createStore(
     combineReducers({
         user: userReducer,
-        error: errorReducer,
     }),
     JSON.parse(localStorage.getItem('session')) || {},
     applyMiddleware(localStorageMiddleware)

@@ -22,8 +22,6 @@ function Login({ closeModal }) {
             history.push('/');
 
             closeModal();
-        } else {
-            dispatch({ type: 'NEW_ERROR', error: 'Error de Login' });
         }
     };
 

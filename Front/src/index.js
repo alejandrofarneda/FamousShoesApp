@@ -12,7 +12,7 @@ import ApolloClient from 'apollo-boost';
 const client = new ApolloClient({
     cache: new InMemoryCache(),
     uri: 'http://localhost:4000/graphql',
-    //uri:'http://localhost:9002/graphql', Para montar el server Fake comentar línea 16 en Products (stock)
+    // uri: 'http://localhost:9002/graphql', //Para montar el server Fake comentar línea 16 en Products (stock)
 });
 ReactDOM.render(
     <React.StrictMode>
